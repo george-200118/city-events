@@ -1,248 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>فعاليات مدينة دمشق | تفاصيل الفعالية</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!--Bootstrap Icons-->
-  <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css ">
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Tajawal:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
-      <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">
-          <img src="assets/img/logo.PNG" alt="شعار" width="100" class="me-2 rounded"> فعاليات مدينة دمشق 
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
-            <li class="nav-item"><a class="nav-link" href="events.html">الفعاليات</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">عن الدليل</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
-            <li class="nav-item">
-              <button id="darkModeToggle" class="btn btn-sm btn-outline-secondary ms-2">🌙</button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main class="container my-5">
-    <div class="card mb-5 shadow">
-      <img src="assets/img/events/AIEvent.jpeg" class="card-img-top" alt="فعالية" height="500">
-      <div class="card-body text-center">
-        <h1 class="card-title">ورشة الذكاء الاصطناعي للمبتدئين</h1>
-        <div class="mb-3">
-          <span class="badge bg-success">جديد</span>
-        </div>
-        <p class="lead">
-          📅 <strong>25 يناير 2026</strong> | 🕒 <strong>4:00 م - 7:00 م</strong> | 📍 <strong>جامعة دمشق-كلية الهندسة المعلوماتية</strong>
-        </p>
-        <p class="h5 text-primary">السعر: <strong>500000 ليرة سورية</strong> | العدد الأعظمي :<strong>200</strong></p>
-        <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#subscribeModal">
-          ✅ اشتراك الآن
-        </button>
-      </div>
-    </div>
-
-    <section class="mb-5">
-      <h2>نبذة عن الورشة</h2>
-      <p>
-        تهدف هذه الورشة إلى تقديم مقدمة شاملة في مجال الذكاء الاصطناعي باستخدام لغة Python،
-        حيث سيتعلم المشاركون أساسيات بناء نماذج تعلم الآلة البسيطة، مع أمثلة تطبيقية من الواقع.
-      </p>
-      <p>
-        <strong>لمن هذه الورشة؟</strong><br>
-        - طلاب الحاسوب والمعلومات<br>
-        - المطورون المبتدئون<br>
-        - المهتمون بدخول مجال الذكاء الاصطناعي دون خلفية تقنية عميقة
-      </p>
-      <p>
-        <strong>ما ستتعلمه:</strong>
-        <ul>
-          <li>مقدمة في مفاهيم الذكاء الاصطناعي وتعلم الآلة</li>
-          <li>استخدام مكتبة Scikit-learn لبناء نموذج بسيط</li>
-          <li>تحليل بيانات تجريبية وتصنيفها</li>
-          <li>عرض النتائج وتفسيرها</li>
-        </ul>
-      </p>
-    </section>
-
-    <!-- Modal: تأكيد الاشتراك -->
-    <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="subscribeModalLabel">تأكيد الاشتراك</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="إغلاق"></button>
-          </div>
-          <div class="modal-body text-center">
-            <p>هل أنت متأكد من رغبتك في الاشتراك في:</p>
-            <h5 class="text-primary">ورشة الذكاء الاصطناعي للمبتدئين</h5>
-            <p class="text-muted">التاريخ: 25 يناير 2026 — السعر: 500000 ليرة سورية</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إلغاء</button>
-            <button type="button" class="btn btn-success" id="confirmSubscribe">نعم </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  <section class="mb-5">
-    <h2>الموقع</h2>
-    <div class="card shadow-sm">
-      <img src="assets/img/maps/EventMap.png" class="card-img-top" alt="موقع الفعالية" style="object-fit: cover;">
-      <div class="card-body">
-        <p class="text-muted">
-          📍 <strong>جامعة دمشق-كلية الهندسة المعلوماتية</strong><br>
-          دمشق، طريق مطار دمشق الدولي
-        </p>
-        <div class="d-flex gap-2 flex-wrap">
-          <button id="addToCalendarBtn" class="btn btn-outline-primary">
-            <i class="bi bi-calendar-plus"></i> أضف إلى التقويم
-          </button>
-
-          <button id="shareBtn" class="btn btn-outline-secondary">
-            <i class="bi bi-share"></i> شارك
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-    <section>
-      <h2 class="mb-4">فعاليات ذات صلة</h2>
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow-sm">
-            <img src="assets/img/events/MarathonEvent.jpg" class="card-img-top" alt="فعالية 1" height="231">
-            <div class="card-body">
-              <h5 class="card-title">ماراثون دمشق</h5>
-              <p class="card-text"><small class="text-muted">28 يناير 2026</small></p>
-              <a href="#" class="btn btn-sm btn-outline-secondary">التفاصيل</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow-sm">
-            <img src="assets/img/events/CyberSecurityEvent.jpg" class="card-img-top" alt="فعالية 2" height="231">
-            <div class="card-body">
-              <h5 class="card-title">مؤتمر الأمن السيبراني</h5>
-              <p class="card-text"><small class="text-muted">30 يناير 2026</small></p>
-              <a href="#" class="btn btn-sm btn-outline-secondary">التفاصيل</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow-sm">
-            <img src="assets/img/events/OperaEvent.jpg" class="card-img-top" alt="فعالية 3" height="231">
-            <div class="card-body">
-              <h5 class="card-title">أمسية فخريات</h5>
-              <p class="card-text"><small class="text-muted">5 فبراير 2026</small></p>
-              <a href="#" class="btn btn-sm btn-outline-secondary">التفاصيل</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow-sm">
-            <img src="assets/img/events/UI-UXEvent.jpg" class="card-img-top" alt="فعالية 4">
-            <div class="card-body">
-              <h5 class="card-title">ورشة تصميم واجهات المستخدم UI/UX</h5>
-              <p class="card-text"><small class="text-muted">12 فبراير 2026</small></p>
-              <a href="#" class="btn btn-sm btn-outline-secondary">التفاصيل</a>
-            </div>
-          </div>
-        </div>  
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow-sm">
-            <img src="assets/img/events/HandicraftEvent.jpg" class="card-img-top" alt="فعالية 5" height="231">
-            <div class="card-body">
-              <h5 class="card-title">فعالية الحرف التقليدية</h5>
-              <p class="card-text"><small class="text-muted">15 فبراير 2026</small></p>
-              <a href="#" class="btn btn-sm btn-outline-secondary">التفاصيل</a>
-            </div>
-          </div>      
-        </div>   
-        <div class="col-md-4 mb-4"> 
-        <div class="card h-100 shadow-sm">
-          <img src="assets/img/events/OperaEvent.jpg" class="card-img-top" alt="فعالية 5" height="231">
-          <div class="card-body">
-            <h5 class="card-title">حفل فرقة موسيقى الشرق</h5>
-            <p class="card-text"><small class="text-muted">20 فبراير 2026</small></p>
-            <a href="#" class="btn btn-sm btn-outline-secondary">التفاصيل</a>
-          </div>
-        </div> 
-        </div>  
-      </div>  
-    </section>
-  </main>
-
-  <footer class="bg-light py-4 mt-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 mb-4 mb-md-0">
-          <h5 class="mb-3">معلومات التواصل</h5>
-          <ul class="list-unstyled text-muted">
-            <li class="mb-2">📧 <strong>البريد الإلكتروني:</strong><br> info@damascus-events.sy</li>
-            <li class="mb-2">📞 <strong>الهاتف:</strong><br> 0114475286</li>
-            <li class="mb-2">📍 <strong>الموقع:</strong><br> دمشق، البرامكة، خلف مبنى الجمعية المعلوماتية السورية</li>
-          </ul>
-        </div>
-        <div class="col-md-4 mb-4 mb-md-0">
-          <h5 class="mb-3">تابعنا على</h5>
-          <div class="d-flex gap-3">
-            <a href="#" class="text-dark social-icon" aria-label="فيسبوك">
-              <i class="bi bi-facebook fs-4"></i>
-            </a>
-            <a href="#" class="text-dark social-icon" aria-label="واتساب">
-              <i class="bi bi-whatsapp fs-4"></i>
-            </a>
-            <a href="#" class="text-dark social-icon" aria-label="إنستغرام">
-              <i class="bi bi-instagram fs-4"></i>
-            </a>
-            <a href="#" class="text-dark social-icon" aria-label="يوتيوب">
-              <i class="bi bi-youtube fs-4"></i>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4 mb-md-0">
-          <img src="assets/img/logo.PNG" alt="شعار المنصة" width="300" class="me-2 rounded">
-        </div>
-      <hr class="my-4 opacity-25">
-      <div class="text-center text-muted small">
-        &copy; 2026 منصة فعاليات مدينة دمشق. جميع الحقوق محفوظة.
-      </div>
-    </div>
-  </footer>
-
-  <button id="scrollToTopBtn" class="btn btn-primary rounded-circle d-none shadow">↑</button>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/main.js"></script>
-
-  <script>
-    //   تأكيد الاشتراك
-    document.getElementById('confirmSubscribe')?.addEventListener('click', function () {
-      const alert = `
-        <div class="alert alert-success alert-dismissible fade show">
-           تم تسجيلك بنجاح في الورشة!<br>
-          ستتلقى التفاصيل على بريدك خلال 24 ساعة.
-          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-        </div>
-      `;
-      document.querySelector('.modal-body').insertAdjacentHTML('beforebegin', alert);
-      setTimeout(() => {
-        const modal = bootstrap.Modal.getInstance(document.getElementById('subscribeModal'));
-        modal.hide();
-      }, 5500);
-    });
-  </script>
-</body>
-</html>
