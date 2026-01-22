@@ -1,270 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>فعاليات مدينة دمشق | جميع الفعاليات</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!--Bootstrap Icons-->
-  <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css ">
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Tajawal:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
-      <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">
-          <img src="assets/img/logo.PNG" alt="شعار" width="100" class="me-2 rounded">  فعاليات مدينة دمشق
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
-            <li class="nav-item"><a class="nav-link active" href="events.html">الفعاليات</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">عن الدليل</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
-            <li class="nav-item">
-              <button id="darkModeToggle" class="btn btn-sm btn-outline-secondary ms-2">🌙</button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main class="container my-5">
-    <h1 class="text-center mb-4">جميع الفعاليات</h1>
-
-<div class="d-flex flex-wrap align-items-center gap-3 mb-4 p-3 bg-light rounded">
-  <div class="dropdown filter-category-dropdown" >
-    <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-      التصنيف: الكل
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="categoryDropdown"  data-filter="category">
-      <li><a class="dropdown-item active" href="#" data-value="all">الكل</a></li>
-      <li><a class="dropdown-item" href="#" data-value="sports">⚽ رياضة</a></li>
-      <li><a class="dropdown-item" href="#" data-value="music">🎵 موسيقى</a></li>
-      <li><a class="dropdown-item" href="#" data-value="family">👨‍👩‍👧‍👦 عائلي</a></li>
-      <li><a class="dropdown-item" href="#" data-value="education">🎓 تعليمي</a></li>
-    </ul>
-  </div>
-
-  <div class="dropdown filter-status-dropdown">
-    <button class="btn btn-outline-success dropdown-toggle" type="button" data-bs-toggle="dropdown">
-      الحالة: الكل
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="statusDropdown" data-filter="status">
-      <li><a class="dropdown-item active" href="#" data-value="all">الكل</a></li>
-      <li><a class="dropdown-item" href="#" data-value="new">🆕 جديد</a></li>
-      <li><a class="dropdown-item" href="#" data-value="popular">🔥 شائع</a></li>
-      <li><a class="dropdown-item" href="#" data-value="upcoming">📅 قريب</a></li>
-    </ul>
-  </div>
-
-  <div class="d-flex align-items-center gap-2">
-    <label for="dateInput" class="form-label mb-0 fw-bold">التاريخ:</label>
-    <input type="date" id="dateInput" class="form-control" style="max-width: 180px;">
-    <button id="applyFiltersBtn" class="btn btn-primary">🔍 بحث</button>
-  </div>
-</div>
-
-    <div class="row" id="eventsGrid">
-      <div class="col-lg-4 col-md-6 mb-4 event-card" 
-        data-category="education"
-        data-status="new"
-        data-date="2026-01-25"
-      >
-        <div class="card h-100 shadow-sm">
-          <img src="assets/img/events/AIEvent.jpeg" class="card-img-top" alt="فعالية 1" height="216">
-          <div class="card-body">
-            <h5 class="card-title">
-              ورشة الذكاء الاصطناعي
-              <span class="badge bg-success">جديد</span>
-            </h5>
-            <p class="card-text text-muted small">
-              📅 25 يناير 2026<br>
-              🕒 4:00 م – 7:00 م<br>
-              📍 جامعة دمشق-كلية الهندسة المعلوماتية
-            </p>
-            <a href="event.html" class="btn btn-primary btn-sm">التفاصيل</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-4 event-card" 
-        data-category="sports"
-        data-status="new"
-        data-date="2026-01-28"
-      >
-        <div class="card h-100 shadow-sm">
-          <img src="assets/img/events/MarathonEvent.jpg" class="card-img-top" alt="فعالية 1" height="216">
-          <div class="card-body">
-            <h5 class="card-title">
-              ماراثون دمشق
-              <span class="badge bg-success">جديد</span>
-            </h5>
-            <p class="card-text text-muted small">
-              📅 28 يناير 2026<br>
-              🕒 4:00 م – 7:00 م<br>
-              📍 جامعة دمشق-كلية الهندسة المعلوماتية
-            </p>
-            <a href="#" class="btn btn-primary btn-sm">التفاصيل</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-4 event-card" 
-        data-category="education"
-        data-status="upcoming"
-        data-date="2026-01-30"
-      >
-        <div class="card h-100 shadow-sm">
-          <img src="assets/img/events/CyberSecurityEvent.jpg" class="card-img-top" alt="فعالية 2">
-          <div class="card-body">
-            <h5 class="card-title">
-              مؤتمر الأمن السيبراني
-              <span class="badge bg-warning text-dark">قريب</span>           
-            </h5>
-            <p class="card-text text-muted small">
-              📅 30 يناير 2026<br>
-              🕒 9:00 ص – 4:00 م<br>
-              📍 عبر الانترنت            </p>
-            <a href="#" class="btn btn-primary btn-sm">التفاصيل</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 mb-4 event-card"
-          data-category="music"
-          data-status="upcoming"
-          data-date="2026-02-05"
-      >
-        <div class="card h-100 shadow-sm">
-          <img src="assets/img/events/OperaEvent.jpg" class="card-img-top" alt="فعالية 3" height="230">
-          <div class="card-body">
-            <h5 class="card-title">
-              أمسية فخريات
-              <span class="badge bg-warning text-dark">قريب</span>
-            </h5>
-            <p class="card-text text-muted small">
-              📅 5 فبراير 2026<br>
-              🕒 9:00 م – 6:00 م<br>
-              📍 دار الأوبرا
-            </p>
-            <a href="#" class="btn btn-primary btn-sm">التفاصيل</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 mb-4 event-card"
-        data-category="education"
-          data-status="popular"
-          data-date="2026-02-12"
-      >
-        <div class="card h-100 shadow-sm">
-          <img src="assets/img/events/UI-UXEvent.jpg" class="card-img-top" alt="فعالية 4">
-          <div class="card-body">
-            <h5 class="card-title">
-              ورشة تصميم واجهات المستخدم UI/UX 
-              <span class="badge bg-info">شائع</span>
-            </h5>
-            <p class="card-text text-muted small">
-              📅 12 فبراير 2026<br>
-              🕒 1:00 م – 5:00 م<br>
-              📍 الجمعية المعلوماتية السورية
-            </p>
-            <a href="#" class="btn btn-primary btn-sm">التفاصيل</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-4 event-card"
-      data-category="family"
-        data-status="new"
-        data-date="2026-02-15"
-    >
-      <div class="card h-100 shadow-sm">
-        <img src="assets/img/events/HandicraftEvent.jpg" class="card-img-top" alt="فعالية 4" height="230">
-        <div class="card-body">
-          <h5 class="card-title">
-            فعالية الحرف التقليدية 
-            <span class="badge bg-success">جديد</span>
-          </h5>
-          <p class="card-text text-muted small">
-            📅 15 فبراير 2026<br>
-            🕒 1:00 م – 5:00 م<br>
-            📍 الجمعية المعلوماتية السورية
-          </p>
-          <a href="#" class="btn btn-primary btn-sm">التفاصيل</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4 col-md-6 mb-4 event-card"
-          data-category="music"
-          data-status="popular"
-          data-date="2026-02-20"
-      >
-        <div class="card h-100 shadow-sm">
-          <img src="assets/img/events/OperaEvent.jpg" class="card-img-top" alt="فعالية 3" height="230">
-          <div class="card-body">
-            <h5 class="card-title">
-              حفل فرقة موسيقى الشرق
-              <span class="badge bg-info">شائع</span>
-            </h5>
-            <p class="card-text text-muted small">
-              📅 20 فبراير 2026<br>
-              🕒 9:00 م – 6:00 م<br>
-              📍 دار الأوبرا
-            </p>
-            <a href="#" class="btn btn-primary btn-sm">التفاصيل</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="noResultsMessage" class="text-center py-5 text-muted d-none">
-      <h4>❌ لا توجد فعاليات تطابق معايير البحث.</h4>
-    </div>
-  </main>
-
-  <footer class="bg-light py-4 mt-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 mb-4 mb-md-0">
-          <h5 class="mb-3">معلومات التواصل</h5>
-          <ul class="list-unstyled text-muted">
-            <li class="mb-2">📧 <strong>البريد الإلكتروني:</strong><br> info@damascus-events.sy</li>
-            <li class="mb-2">📞 <strong>الهاتف:</strong><br> 0114475286</li>
-            <li class="mb-2">📍 <strong>الموقع:</strong><br> دمشق، البرامكة، خلف مبنى الجمعية المعلوماتية السورية</li>
-          </ul>
-        </div>
-        <div class="col-md-4 mb-4 mb-md-0">
-          <h5 class="mb-3">تابعنا على</h5>
-          <div class="d-flex gap-3">
-            <a href="#" class="text-dark social-icon" aria-label="فيسبوك">
-              <i class="bi bi-facebook fs-4"></i>
-            </a>
-            <a href="#" class="text-dark social-icon" aria-label="واتساب">
-              <i class="bi bi-whatsapp fs-4"></i>
-            </a>
-            <a href="#" class="text-dark social-icon" aria-label="إنستغرام">
-              <i class="bi bi-instagram fs-4"></i>
-            </a>
-            <a href="#" class="text-dark social-icon" aria-label="يوتيوب">
-              <i class="bi bi-youtube fs-4"></i>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4 mb-md-0">
-          <img src="assets/img/logo.PNG" alt="شعار المنصة" width="300" class="me-2 rounded">
-        </div>
-      <hr class="my-4 opacity-25">
-      <div class="text-center text-muted small">
-        &copy; 2026 منصة فعاليات مدينة دمشق. جميع الحقوق محفوظة.
-      </div>
-    </div>
-  </footer>
-  <button id="scrollToTopBtn" class="btn btn-primary rounded-circle d-none shadow" >↑</button>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/main.js"></script>  
-</body>
-</html>
