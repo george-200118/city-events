@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>فعاليات مدينة دمشق | اتصل بنا</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!--Bootstrap Icons-->
+  <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css ">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Tajawal:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+          <img src="assets/img/logo.PNG" alt="شعار" width="100" class="me-2 rounded"> فعاليات مدينة دمشق
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+            <li class="nav-item"><a class="nav-link" href="events.html">الفعاليات</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">عن الدليل</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contact.html">اتصل بنا</a></li>
+            <li class="nav-item">
+              <button id="darkModeToggle" class="btn btn-sm btn-outline-secondary ms-2">🌙</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <h1 class="text-center mb-5">اتصل بنا</h1>
+
+    <div class="row">
+      <div class="col-lg-6 mb-4">
+          <img src="assets/img/damascus.jpg" alt="شعار المنصة" class="me-2 rounded" width="500" height="450">
+      </div>
+
+      <div class="col-lg-6">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h4>أرسل لنا رسالة</h4>
+            <div id="contactAlert" class="d-none"></div>
+            <form id="contactForm" class="mt-3">
+              <div class="mb-3">
+                <label for="name" class="form-label">الاسم الكامل <span>*</span></label>
+                <input type="text" class="form-control isvalid" id="name" name="name" required onblur="setupFieldValidation('name');">
+                <div class="invalid-feedback"> الاسم مطلوب</div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">البريد الإلكتروني <span>*</span></label>
+                <input type="email" class="form-control isvalid" id="email" name="email" required onblur="setupFieldValidation('email');">
+                <div class="invalid-feedback"> البريد الالكتروني مطلوب</div>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">الرسالة <span>*</span></label>
+                <textarea class="form-control isvalid" id="message" name="message" rows="4" required onblur="setupFieldValidation('message');"></textarea>
+                <div class="invalid-feedback"> الرسالة مطلوبة</div>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">إرسال الرسالة</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-5">
+      <h4 class="text-center mb-3">موقعنا على الخريطة</h4>
+      <div class="bg-light border rounded text-center p-4">
+        <img src="assets/img/maps/location.png" alt="موقعنا" class="img-fluid rounded" style="object-fit: cover;">
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-light py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h5 class="mb-3">معلومات التواصل</h5>
+          <ul class="list-unstyled text-muted">
+            <li class="mb-2">📧 <strong>البريد الإلكتروني:</strong><br> info@damascus-events.sy</li>
+            <li class="mb-2">📞 <strong>الهاتف:</strong><br> 0114475286</li>
+            <li class="mb-2">📍 <strong>الموقع:</strong><br> دمشق، البرامكة، خلف مبنى الجمعية المعلوماتية السورية</li>
+          </ul>
+        </div>
+        <!-- عمود: وسائل التواصل الاجتماعي (الآن على اليسار) -->
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h5 class="mb-3">تابعنا على</h5>
+          <div class="d-flex gap-3">
+            <a href="#" class="text-dark social-icon" aria-label="فيسبوك">
+              <i class="bi bi-facebook fs-4"></i>
+            </a>
+            <a href="#" class="text-dark social-icon" aria-label="واتساب">
+              <i class="bi bi-whatsapp fs-4"></i>
+            </a>
+            <a href="#" class="text-dark social-icon" aria-label="إنستغرام">
+              <i class="bi bi-instagram fs-4"></i>
+            </a>
+            <a href="#" class="text-dark social-icon" aria-label="يوتيوب">
+              <i class="bi bi-youtube fs-4"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 mb-md-0">
+          <img src="assets/img/logo.PNG" alt="شعار المنصة" width="300" class="me-2 rounded">
+        </div>
+      <hr class="my-4 opacity-25">
+      <div class="text-center text-muted small">
+        &copy; 2026 منصة فعاليات مدينة دمشق. جميع الحقوق محفوظة.
+      </div>
+    </div>
+  </footer>
+
+  <button id="scrollToTopBtn" class="btn btn-primary rounded-circle d-none shadow">↑</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

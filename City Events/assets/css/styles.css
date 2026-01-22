@@ -1,0 +1,106 @@
+/* ===== التنسيقات العامة ===== */
+body {
+    font-family: 'Cairo', 'Tajawal', sans-serif;
+    line-height: 1.6;
+  }
+  
+  body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  body.dark-mode .navbar,
+  body.dark-mode .card,
+  body.dark-mode footer {
+    background-color: #1e1e1e !important;
+    color: #f0f0f0 !important;
+    border-color: #333 !important;
+  }
+  body.dark-mode .text-muted { color: #aaa !important; }
+  body.dark-mode .card-body { color: #e0e0e0; }
+  
+  /*  دعم الوضع الليلي للـ Navbar  */
+body.dark-mode .navbar-nav .nav-link,
+body.dark-mode .navbar-brand,
+body.dark-mode .navbar-text {
+  color: #ffffff !important; 
+}
+
+/* تأثير التحويم (hover) في الوضع الليلي */
+body.dark-mode .navbar-nav .nav-link:hover,
+body.dark-mode .navbar-brand:hover {
+  color: #e0e0e0 !important; 
+}
+
+/* العنصر النشط (active) */
+body.dark-mode .navbar-nav .nav-link.active {
+  color: #bbdefb !important; 
+}
+  /* زر العودة للأعلى */
+  #scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+    z-index: 1000;
+  }
+  body.dark-mode .bg-light {
+    background-color: #2d2d2d !important;
+    border: 1px solid #444;
+  }
+  body.dark-mode .btn-outline-primary {
+    color: #64b5f6 !important;
+    border-color: #64b5f6 !important;
+  }
+  body.dark-mode .btn-outline-primary:hover {
+    background-color: #64b5f6 !important;
+    color: #000 !important;
+  }
+  
+  body.dark-mode .btn-outline-success {
+    color: #81c784 !important;
+    border-color: #81c784 !important;
+  }
+  body.dark-mode .btn-outline-success:hover {
+    background-color: #81c784 !important;
+    color: #000 !important;
+  }
+  
+  body.dark-mode .btn-outline-secondary {
+    color: #bdbdbd !important;
+    border-color: #bdbdbd !important;
+  }
+  body.dark-mode .btn-outline-secondary:hover {
+    background-color: #bdbdbd !important;
+    color: #000 !important;
+  }
+  
+  /* حقل التاريخ في الوضع الليلي */
+  body.dark-mode input[type="date"] {
+    background-color: #1e1e1e !important;
+    color: #e0e0e0 !important;
+    border-color: #444 !important;
+  }
+  /* أيقونات التواصل الاجتماعي*/
+  .bi-whatsapp:hover{
+    color: green;
+  }
+  .bi-facebook:hover{
+    color: blue;
+  }
+  .bi-youtube:hover{
+    color: red;
+  }
+  .bi-instagram:hover{
+    color: #E1306C;
+  }
+  /* وضع علامة * بالأحمر في النموذج*/
+  span{
+    color:red;
+  }
+  /* تحسين تخطيط البطاقات في الجوال */
+  @media (max-width: 768px) {
+    .card-img-top { height: 150px; object-fit: cover; }
+    .navbar-brand img { width: 32px; }
+  }
